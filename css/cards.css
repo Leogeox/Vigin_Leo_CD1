@@ -14,13 +14,23 @@
 .txt_filters {
     color: var(--white);
     padding: 0.3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
     font: 400 18px / 1 RobotoCondensed Bold, Trebuchet MS, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.3s;
+}
+
+.txt_filters:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    transition: 0.3s;
+    border-radius: 10px;
 }
 
 #reset_btn {
@@ -38,13 +48,6 @@
 }
 
 #reset_btn:hover {
-    cursor: pointer;
-    background-color: var(--dark-blue);
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.txt_filters:hover {
     cursor: pointer;
     background-color: var(--dark-blue);
     border-radius: 10px;
@@ -101,7 +104,6 @@
 }
 
 .card img {
-    background-color: var(--white);
     width: 265px;
     height: 325px;
     object-fit: contain;
@@ -113,7 +115,7 @@
 }
 
 .card p {
-    background-color: var(--white);
+    color: var(--white);
     width: 93%;
     height: 17.5px;
     margin-left: 0.65rem;
@@ -121,10 +123,11 @@
 }
 
 .fav {
-    background-image: url(../img/icons/fav.png);
+    background-image: url('../img/icons/fav.png');
     cursor: pointer;
     transition: 0.3s;
-    object-fit: contain;
+    z-index: 2;
+    float: right;
 }
 
 .fav:hover {

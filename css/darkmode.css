@@ -65,6 +65,16 @@
     transition: 0.3s;
 }
 
+.darkmode .filters {
+    background-color: var(--dark-grey);
+    transition: 0.3s;
+}
+
+.darkmode #reset_btn {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
 .darkmode .inside_tab {
     color: var(--white);
     transition: 0.3s;
